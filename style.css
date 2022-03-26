@@ -1,0 +1,235 @@
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+::-webkit-scrollbar {
+    display: none;
+}
+* {
+    cursor: default;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--Violet);
+    color: white;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--Violet);
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 375px;
+}
+.images {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 36px;
+}
+.huddle-logo {
+    border: 1px solid transparent;
+    width: 130px;
+    height: 18px;
+    margin: 3px 0 66px 0;
+    transform: translateX(-4px);
+    object-fit: cover;
+}
+.screens {
+    height: 215px;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 36px 0 36px;
+}
+.info h1 {
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: -0.125px;
+    margin: 0 0 13px 0;
+}
+.info p {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.3;
+    margin: 0 0 24px 0;
+}
+button {
+    width: 200px;
+    align-self: center;
+    color: var(--Violet);
+    font-size: 14px;
+    padding: 15px 0 11px 0;
+    border: none;
+    border-radius: 21px;
+    margin: 0 0 64px 0;
+    letter-spacing: 0.5px;
+    transition: color 100ms ease-in;
+    transition: background-color 100ms ease-in;
+}
+button:hover {
+    cursor: pointer;
+    background-color: var(--Soft-Magenta);
+    color: white;
+    transition: all 100ms ease-out;
+}
+.social-links {
+    display: flex;
+    gap: 10px;
+    align-self: center;
+    margin: 0 0 40px 0 ;
+}
+.social-links svg {
+    cursor: pointer;
+    width: 14px;
+    height: 14px;
+    fill: white;
+    border: 2px solid white;
+    padding: 6px;
+    border-radius: 50%;
+    transition: fill 100ms ease-in;
+    transition: border 100ms ease-in;
+}
+.social-links svg:hover {
+    cursor: pointer;
+    fill: var(--Soft-Magenta);
+    border: 2px solid var(--Soft-Magenta);
+    transition: all 100ms ease-out;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: var(--Soft-Magenta); 
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+@media (min-width: 750px) {
+
+    main {
+        width: 750px;
+    }
+    .images {
+        padding: 72px 72px 72px 74px;
+    }
+    .huddle-logo {
+        width: 260px;
+        height: 36px;
+        margin: 6px 0 133px 0;
+    }
+    .screens {
+        height: 429px;
+    }
+    .info {
+        padding: 49px 72px 0 72px;
+    }
+    .info h1 {
+        font-size: 48px;
+        letter-spacing: -0.25px;
+        margin: 0 0 26px 0;
+    }
+    .info p {
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 1.5;
+        margin: 0 0 48px 0;
+    }
+    button {
+        width: 400px;
+        font-size: 24px;
+        padding: 30px 0 22px 0;
+        border-radius: 42px;
+        margin: 0 0 128px 0;
+        letter-spacing: 1px;
+    }
+    .social-links {
+        gap: 20px;
+        margin: 0 0 80px 0 ;
+    }
+    .social-links svg {
+        width: 28px;
+        height: 28px;
+        padding: 12px;
+    }
+}
+@media (min-width: 1440px) {
+
+    body {
+        background-image: url(images/bg-desktop.svg);
+        background-size: auto;
+    }
+    main {
+        flex-direction: row;
+        width: 1294px;
+        height: 800px;
+    }
+    .images {
+        padding: 0;
+    }
+    .huddle-logo {
+        width: 216px;
+        height: 30px;
+        transform: translateX(-5px);
+        margin: 64px 0 97px 0;
+    }
+    .screens {
+        height: 506px;
+    }
+    .info {
+        padding: 0;
+        padding: 0 7px 40px 53px;
+        justify-content: flex-end;
+    }
+    .info h1 {
+        text-align: left;
+        font-size: 40px;
+        letter-spacing: -0.25px;
+        margin: 0;
+    }
+    .info p {
+        text-align: left;
+        font-size: 18px;
+        margin: 20px 0 0 0;
+        letter-spacing: -0.1px;
+    }
+    button {
+        width: 200px;
+        font-size: 18px;
+        font-weight: 400;
+        padding: 16px 0 18px 0;
+        border-radius: 42px;
+        margin: 24px 0 0 0;
+        letter-spacing: 0.9px;
+        align-self: flex-start;
+    }
+    .social-links {
+        margin: 0;
+        align-self: flex-end;
+        gap: 16px;
+        margin: 182px 0 0 0;
+    }
+    .social-links svg {
+        width: 18px;
+        height: 19px;
+        padding: 10px;
+        border: 1px solid white;
+    }
+    .social-links svg:hover {
+        border: 1px solid var(--Soft-Magenta);
+        transition: all 100ms ease-out;
+    }
+}
