@@ -114,9 +114,11 @@ button:hover {
     text-align: center; 
 }
 .attribution a { 
-    color: var(--Soft-Magenta); 
+    cursor: pointer;
+    color: rgb(0, 154, 250); 
     font-size: 14px;
     letter-spacing: 2px;
+    margin-left: 2px;
 }
 @media (min-width: 750px) {
 
